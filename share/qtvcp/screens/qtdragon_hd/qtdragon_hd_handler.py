@@ -758,6 +758,12 @@ class HandlerClass:
             self.add_status("Loaded program file {}".format(self.last_loaded_program))
             ACTION.OPEN_PROGRAM(self.last_loaded_program)
 
+    def external_load(self, fname):
+        fname = fname[0]
+        self.w.progressBar.setValue(0)
+        self.add_status("external request to Loaded program file {}".format(fname))
+        ACTION.OPEN_PROGRAM(fname)
+
     def btn_pause_spindle_clicked(self, state):
         self.w.action_pause.setEnabled(not state)
         self.w.action_step.setEnabled(not state)

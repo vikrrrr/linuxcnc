@@ -3983,7 +3983,7 @@ class gmoccapy(object):
             text = "Vc= {0:.2f}".format(vc)
         self.widgets.lbl_vc.set_text(text)
 
-    def external_reload(self, path):
+    def external_load(self, path):
         print('gmoccapy external reload:',path)
         if path is None:
             self.widgets.hal_action_reload.emit("activate")
