@@ -65,7 +65,7 @@ LANGUAGES = @LANGUAGES@
 docsdir = ${prefix}/share/doc/linuxcnc
 sampleconfsdir = ${prefix}/share/doc/linuxcnc/examples/sample-configs
 ncfilesdir = ${prefix}/share/linuxcnc/ncfiles
-tcldir = ${prefix}/lib/tcltk/linuxcnc
+tcldir = ${prefix}/lib/tcl8.6/linuxcnc
 
 
 # /Standard configure directories
