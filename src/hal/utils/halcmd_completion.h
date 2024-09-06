@@ -41,8 +41,7 @@
 #define HALCMD_COMPLETION_H
 
 #include <stdio.h>
-#include <readline/readline.h>
-#include <readline/history.h>
+#include <editline.h>
 
 extern int comp_id;
 extern void halcmd_init_readline();
